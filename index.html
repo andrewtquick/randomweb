@@ -5,16 +5,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random | Discord bot</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 
 <body>
     <section class="section">
-        <div class="container.is-max-desktop level">
-            <h1 class="title">Random</h1>       
-            <h2 class="subtitle">an Among Us Discord Bot</h2>
+        <div class="container">
+            <div class="img-text">
+                <img class="randomimg" src="src/images/random.png" alt="">
+                <div class="randombot">
+                    <h1 class="title">Random</h1>
+                    <h4 class="subtitle">an <a href="http://www.innersloth.com/gameAmongUs.php">Among Us</a> Discord Bot</h2>
+                </div>
+            </div>
         </div>
     </section>
+    <p id="coming-soon">Coming Soon<span id='dot'></span></p>
+
+    <footer>
+        <div class="footer-links">
+            <a class="url-icon" href="https://github.com/andrewtquick/randomweb"><i class="fab fa-github fa-2x"></i></a>
+            <a class="url-icon" href="https://discord.gg/s8UHeKs"><i class="fab fa-discord fa-2x"></i></a>
+            <a class="url-icon" href="mailto:andrewquick.dev@gmail.com"><i class="fas fa-at fa-2x"></i></a>
+        </div>
+        <p>All Rights Reserved. Copyright &copy; 2020 - Andrew Quick | Random Bot image by <a href="https://www.reddit.com/user/teepmon">u/teepmon</a></p>
+    </footer>
 </body>
 
+<script type="text/javascript">
+    let comingSoon = document.getElementById('dot');
+    const text1 = [
+        '.  ',
+        '.. ',
+        '...',
+        '   '
+    ];
+
+    let current = 0;
+
+    setInterval(() => {
+        let text = text1[current];
+        comingSoon.innerHTML = text;
+        current += 1
+
+        if (current >= text1.length) {
+            current = 0
+        };
+    }, 1000);
+
+</script>
 </html>
