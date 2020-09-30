@@ -22,7 +22,11 @@
             </div>
         </div>
     </section>
-    <p id="coming-soon">Coming Soon<span id='dot'></span></p>
+
+    <div class="add-bot">
+        <p>Add <span class="red"><strong>Random</strong></span> to your Discord server</p>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=757071685852856410&permissions=289856&scope=bot"><button class="add-bot-button">Add Random</button></a>
+    </div>
 
     <footer>
         <div class="footer-links">
@@ -33,27 +37,5 @@
         <p>All Rights Reserved. Copyright &copy; 2020 - Andrew Quick | Random Bot image by <a href="https://www.reddit.com/user/teepmon">u/teepmon</a></p>
     </footer>
 </body>
-
-<script type="text/javascript">
-    let comingSoon = document.getElementById('dot');
-    const text1 = [
-        '.  ',
-        '.. ',
-        '...',
-        '   '
-    ];
-
-    let current = 0;
-
-    setInterval(() => {
-        let text = text1[current];
-        comingSoon.innerHTML = text;
-        current += 1
-
-        if (current >= text1.length) {
-            current = 0
-        };
-    }, 1000);
-
-</script>
 </html>
+

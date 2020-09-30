@@ -4,17 +4,21 @@
     padding: 0;
 }
 
+.red {
+    color: rgb(224, 3, 3);
+}
+
 a {
-    color: grey;
+    color: rgb(224, 3, 3);
     transition: .5s;
 }
 
 a:visited {
-    color: white;
+    color: rgb(224, 3, 3);
 }
 
 a:hover {
-    color: red;
+    color: rgb(224, 3, 3);
     transition: .5s;
 }
 
@@ -67,7 +71,6 @@ h1 {
 
 #coming-soon {
     font-size: 100px;
-    padding-top: 40px;
     text-align: center;
     color: white;
 }
@@ -92,4 +95,38 @@ footer {
     padding-bottom: 10px;
     padding-right: 20px;
     transition: .5s;
+}
+
+.add-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.add-bot p {
+    font-size: 30px;
+    color: white;
+}
+
+.add-bot a {
+    margin-top: 30px;
+}
+
+.add-bot button {
+    width: 300px;
+    height: 85px;
+    background-color: #7289DA;
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.add-bot button:hover {
+    background-color: rgb(224, 3, 3);
+    cursor: pointer;
 }
